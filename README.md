@@ -8,16 +8,16 @@ In this situation hdparm usually still works, and allows to send TRIM commands t
 
 Creating (allocating) big file without extra writes on Linux:
 
-  sudo hdparm --fallocate 1000 temp_file
+`sudo hdparm --fallocate 1000 temp_file`
 
 Creating (allocating) big file without extra writes on macOS:
 Compile resize-mac.c
 
-  gcc resize-mac.c -o resize-mac
-  ./resize-mac /path/to/big_file 1000
+`gcc resize-mac.c -o resize-mac`
+`./resize-mac /path/to/big_file 1000`
 
 Run trimmer script:
 
-  sudo ./trimmer.sh /path/to/trim_file /path/to/trim_dev
+`sudo ./trimmer.sh /path/to/trim_file /path/to/trim_dev`
 
 
